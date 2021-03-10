@@ -1,0 +1,85 @@
+.container {
+  margin: 0 auto;
+  width: 1400px;
+  text-align: center;
+}
+
+li {
+  list-style-type: none;
+}
+
+.header-top {
+  width: 100%;
+
+}
+
+nav .menu-top ul {
+  margin: 0;
+  margin-left: 130px;
+  padding: 0;
+  list-style: none;
+  background: green;
+  
+}
+
+.menu-top li {
+  display: inline-block;
+  margin-right: 3em;
+}
+
+.menu-top a {
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.header {
+  background:;
+}
+
+.header-main {
+  
+  background: grey;
+}
+
+div .header-main {
+  color: red;
+
+  width: 534.02px;
+  height: 186px;
+  left: 184.08px;
+  top: 152px;
+}
+
+/* тест */ 
+.about {
+  float: left;
+  width: 46%;
+  min-height: 100px;
+  padding: 2%;
+  background-color: rgba(243, 156, 18, 0.1);
+  border-radius: 5px;
+
+}
+
+.about > p {
+  margin: 1em 0;
+  font-size: 0.8em;
+}
+
+.about > p:last-child {
+  margin: 0;
+}
+
+.about > h1 {
+  margin: 0;
+  font-size: 0.9em;
+}
+/* тест завершен */
+
+h1 {
+  display: none;
+}
+
+.header-main h2 {
+  color: blue;
+}
