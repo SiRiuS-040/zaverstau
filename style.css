@@ -1,87 +1,122 @@
 .container {
-  margin: 0 auto;
-  width: 1400px;
-  text-align: center;
-}
+  margin:0;
+  padding:0;
+  width:1400px;
+  text-align:center;
+   }
+
+/* ХЕДЕР Начало */
 
 li {
-  list-style-type: none;
-}
-
-.header-top {
-  width: 100%;
-
-}
-
-nav .menu-top ul {
-  margin: 0;
-  margin-left: 130px;
-  padding: 0;
-  list-style: none;
-  background: green;
+    list-style-type: none;
   
 }
 
-.menu-top li {
-  display: inline-block;
-  margin-right: 3em;
-}
-
-.menu-top a {
-  text-decoration: none;
-  font-size: 16px;
-}
-
-
-h1 {
-  display: none;
-}
-
-.header-main h2 {
-  color: blue;
-}
-
-/*
 .header {
+  background: ;
+  border:1px solid black;
+ 
+  margin:0;
+  padding:0;
+  
+  background:#f2eebf;
+  height:715px;
+  
+  }
+ 
+nav {
+  margin:36px 100.4px 91px 98.32px;
+  padding:0px;
+  border:0px solid black;
+}
+
+.menu {
+
+  padding-left: 0px;
+  display: inline;
+  
+  text-align: center;
   background:;
+  
+}
+
+.menu li {
+  
+  display: inline;
+  font-size:16px;
+  line-height: 19.5px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.menu a  {
+  text-decoration: none;
+
 }
 
 .header-main {
+  border: 0px solid grey;
   
-  background: grey;
-}
-
-div .header-main {
-  color: red;
-
+  background: ;
+  margin:0px 0px 0px 184.08px;
+  text-align:left;
   width: 534.02px;
-  height: 186px;
+
   left: 184.08px;
   top: 152px;
+ 
 }
 
-/* тест  
-.about {
-  float: left;
-  width: 46%;
-  min-height: 100px;
-  padding: 2%;
-  background-color: rgba(243, 156, 18, 0.1);
-  border-radius: 5px;
-
+h1 {
+  display:none;
 }
 
-.about > p {
-  margin: 1em 0;
-  font-size: 0.8em;
+.header-main h2 {
+border: 0px solid blue;
+  
+margin:0 0 24px 0;
+  
+font-family: Montserrat;
+font-size: 50px;
+font-style: normal;
+font-weight: 400;
+line-height: 62px;
+letter-spacing: 0em;
+text-align: left;
+
+color:blue;
+  
+}
+.header-main p {
+border: 0px solid red; 
+
+margin:0 0 0 0;
+  
+font-family: Montserrat;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px;
+letter-spacing: 0em;
+text-align: left;
+
+color:red;
+  
 }
 
-.about > p:last-child {
-  margin: 0;
+.header-main input {
+  border: 0px solid black; 
+  
+  width: 309.14px;
+  height: 74px;
+  margin: 21px 0 0px -2.08px;
+  background: #CC8B86;
+  
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size:20px;
+  line-height: 24.38px;
 }
 
-.about > h1 {
-  margin: 0;
-  font-size: 0.9em;
-}
-тест завершен */
+/* ХЕДЕР - КОНЕЦ  */
