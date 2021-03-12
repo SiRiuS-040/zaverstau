@@ -13,47 +13,63 @@ li {
 }
 
 .header {
-  background: ;
   border:1px solid black;
  
   margin:0;
   padding:0;
   
   background:#f2eebf;
-  height:715px;
-  
   }
- 
+
 nav {
-  margin:36px 100.4px 91px 98.32px;
+  display:flex;
+  
+  width:1200px;
+  margin:0px;
   padding:0px;
-  border:0px solid black;
+  border:1px solid red;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.navigation {
+
+}
+
+.logo {
+
+    border:1px solid black;
+    margin-left: 0;
+    margin-right: auto;
 }
 
 .menu {
-
-  padding-left: 0px;
-  display: inline;
-  
-  text-align: center;
-  background:;
-  
+  padding:0;
+  border:1px solid black;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .menu li {
   
   display: inline;
   font-size:16px;
-  line-height: 19.5px;
+  line-height: 20px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 400;
 }
-
+nav a,
 .menu a  {
   text-decoration: none;
-
 }
+.phone {
+  border:1px solid black;
+
+  margin-left: auto;
+  margin-right: 0px;
+}
+
 
 .header-main {
   border: 0px solid grey;
@@ -105,6 +121,21 @@ color:red;
   
 }
 
+.header-main a {
+  text-decoration: none;
+  border: 1px solid black; 
+  
+  width: 309.14px;
+  height: 74px;
+  margin: 21px 0 0px -2px;
+  background: #CC8B86;
+  
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size:20px;
+  line-height: 24.38px;
+}
+
 .header-main input {
   border: 0px solid black; 
   
@@ -120,3 +151,46 @@ color:red;
 }
 
 /* ХЕДЕР - КОНЕЦ  */
+
+/* О НАС - НАЧАЛО */
+
+.about-us {
+  background: grey;
+  border: 1px solid black;  
+  
+  margin:0 0 0 0 ;
+  padding: 0;
+   
+}
+
+.about-us h2 {
+  border: 1px solid black;  
+  
+  margin: 65px 632px 0 632px ;  
+  font-size: 40px;
+  text-align: center;
+  
+}
+
+.about-us img{
+  border: 1px solid red;  
+  
+  margin: 0px 773.46px 0px 182px;
+  width: 444.54px;
+  height: 465px;
+}
+
+.about-us aside {
+  border: 1px solid black; 
+  
+float: left;
+  width: 368px;
+  
+  position: absolute;
+  margin: 0px 0px 0px 0px ;
+  
+}
+
+
+
+/* О НАС - КОНЕЦ */
