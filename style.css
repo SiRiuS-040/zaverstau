@@ -1,122 +1,218 @@
+/* шрифты */
+
+body {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  color: #533738;  
+  text-align: left;  
+}
+
+.header-main h2 {
+  
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 62px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #533738;
+}
+
+.header-main .title-text {
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0em;
+}
+
+.btn {
+  font-size: 20px;
+  line-height: 24px;
+  color: #533738;
+}
+
+.about-us h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 0em;
+}
+
+.section-about-us p {
+  font-size: 18px;
+  line-height: 30px;
+  text-align: left;
+}
+
+/* шрифты конец */
+
 .container {
-  margin:0;
-  padding:0;
-  width:1400px;
-  text-align:center;
-   }
+  margin: 0;
+  padding: 0;
+  width: 1400px;
+  text-align: center;
+}
 
 /* ХЕДЕР Начало */
 
 li {
-    list-style-type: none;
-  
+  list-style-type: none;
 }
 
-.header {
-  background: ;
-  border:1px solid black;
- 
-  margin:0;
-  padding:0;
-  
-  background:#f2eebf;
-  height:715px;
-  
-  }
- 
+header {
+  width: 1400px;
+
+  padding-top: 36px;
+  background: #f2eebf;
+  background-image: url(/img/header-main.jpg);
+}
+
 nav {
-  margin:36px 100.4px 91px 98.32px;
-  padding:0px;
-  border:0px solid black;
+  width: 1200px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation {
+  border: 1px solid black;
+  margin: 0;
+  padding: 0;
+
+}
+
+.logo {
+  margin-left: 0;
+  margin-right: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /*  background-image: url(/img/logo.svg); */
+}
+
+.logo::before {
+  content: "";
+  background-image: url(/img/logo.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  vertical-align: center;
 }
 
 .menu {
+  border: 1px solid black;
 
-  padding-left: 0px;
-  display: inline;
-  
-  text-align: center;
-  background:;
-  
+  padding: 0;
+  width: 840px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.menu li {
-  
-  display: inline;
-  font-size:16px;
-  line-height: 19.5px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 400;
-}
-
-.menu a  {
+nav a,
+.menu a {
+  border: 1px solid black;
   text-decoration: none;
+  color: #533738;
+}
 
+.phone {
+  margin-left: auto;
+  margin-right: 0px;
+  padding-top: 2px;
 }
 
 .header-main {
-  border: 0px solid grey;
-  
-  background: ;
-  margin:0px 0px 0px 184.08px;
-  text-align:left;
-  width: 534.02px;
-
-  left: 184.08px;
-  top: 152px;
- 
+  margin: 0;
+  padding: 0;
+  margin-left: 184px;
+  margin-top: 91px;
+  text-align: left;
+  width: 534px;
 }
 
 h1 {
-  display:none;
+  margin: 0;
+  padding: 0;
+  display: none;
 }
 
 .header-main h2 {
-border: 0px solid blue;
-  
-margin:0 0 24px 0;
-  
-font-family: Montserrat;
-font-size: 50px;
-font-style: normal;
-font-weight: 400;
-line-height: 62px;
-letter-spacing: 0em;
-text-align: left;
+  margin: 0;
 
-color:blue;
-  
-}
-.header-main p {
-border: 0px solid red; 
-
-margin:0 0 0 0;
-  
-font-family: Montserrat;
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: 30px;
-letter-spacing: 0em;
-text-align: left;
-
-color:red;
-  
 }
 
-.header-main input {
-  border: 0px solid black; 
-  
-  width: 309.14px;
-  height: 74px;
-  margin: 21px 0 0px -2.08px;
-  background: #CC8B86;
-  
-  font-family: Montserrat;
-  font-weight: 400;
-  font-size:20px;
-  line-height: 24.38px;
+.header-main .title-text {
+  padding: 0;
+  margin: 24px 0 0 0;
+
+}
+
+.btn {
+  text-decoration: none;
+  padding: 25px 66px 24px 68px;
+  text-align: center;
+  background: #cc8b86;
+}
+
+.title-link {
+  margin: 0;
+  margin-top: 46px;
+  padding-bottom: 168px;
 }
 
 /* ХЕДЕР - КОНЕЦ  */
+
+/* О НАС - НАЧАЛО */
+
+.about-us {
+  background: #f9eae1;
+  margin: 0;
+  padding: 0;
+  padding-top: 65px;
+
+}
+
+.about-us h2 {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 40px;
+
+}
+
+.section-about-us {
+  padding: 0;
+ 
+  /*  border: 1px solid black; */
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+}
+
+.section-about-us img {
+  margin-left: 182px;
+
+  width: 445px;
+  height: 465px;
+}
+
+.section-about-us p {
+  margin: 0;
+  /*  border: 1px solid red; */
+
+  text-align: left;
+  height: 330px;
+  width: 528px;
+}
