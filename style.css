@@ -46,6 +46,79 @@ body {
   text-align: left;
 }
 
+.exp-digits {
+  font-size: 50px;
+  line-height: 62px;
+  color:#FFFFFF;
+}
+
+.exp-text {
+  font-size: 30px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color:#FFFFFF;
+}
+
+/* */
+
+.portfolio h2 {
+  font-size: 30px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #533738;
+  text-align: left;
+}
+
+.our-works-btn {
+  font-family: Montserrat;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 37px;
+  letter-spacing: 0em;
+  text-align: left;
+  
+}
+
+.our-team h2 {
+font-size: 40px;
+font-weight: 400;
+line-height: 50px;
+letter-spacing: 0em;
+}
+
+.cards p {
+  
+font-size: 18px;
+line-height: 30px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+
+.how-we-work h2 {
+font-size: 40px;
+font-weight: 400;
+line-height: 50px;
+text-transform: uppercase;
+ color: #533738;
+  
+}
+
+.how-we-work-step {
+font-size: 30px;
+font-weight: 500;
+line-height: 30px;
+color: #FFFFFF;
+  
+}
+
+.how-we-work-text {
+font-size: 18px;
+line-height: 30px;
+text-align: center;
+  
+}
 /* шрифты конец */
 
 .container {
@@ -194,7 +267,7 @@ h1 {
 .section-about-us {
   padding: 0;
  
-  /*  border: 1px solid black; */
+ border: 1px solid black;
   
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -216,3 +289,193 @@ h1 {
   height: 330px;
   width: 528px;
 }
+
+.experience {
+  padding:0;
+  margin:0;
+  padding-top:85px;
+  padding-bottom:81px;
+  border: 1px solid red;
+  background: #8D7370;
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ПОРТФОЛИО начало */
+
+.portfolio {
+  border: 1px solid red;
+
+  margin:0;
+  padding:0;
+  padding-top:65px;
+  padding-left:100px;  
+  padding-right:100px;
+  background: #E5E5E5;
+}
+
+/* НАШИ РАБОТЫ */
+
+.portfolio h2 {
+  border: 1px solid red;  
+  margin:0;
+  padding:0; 
+}
+
+.our-works {
+  margin:0;
+  padding:0; 
+    
+  border: 1px solid red;
+
+  
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap:wrap;
+  
+  padding-top:10px;
+}
+
+.ver-1 {
+  border: 1px solid red; 
+  width:488px;
+  height: 451px;
+  margin-top:30px;
+
+}
+.ver-2 {
+  border: 1px solid red; 
+  width:692px;
+  height: 451px;
+  margin-top:30px;
+ }
+
+.our-works-btn {
+  margin:0;
+  padding:0;
+  
+  width: 294px;
+  height: 37px;
+  margin-top:40px;
+  margin-bottom:65px;
+  border: 0px solid red; 
+  text-align: center;
+  
+}
+
+/* НАША КОМАНДА */
+
+.our-team {
+/*  border: 1px solid blue;   */
+  margin:0;
+  padding:0;
+  padding-left:181px;
+  padding-right:181px;
+  background: #E2C4BA;
+}
+
+.our-team h2 {
+/*  border: 1px solid red;  */
+  margin:0;
+  padding:0;
+  padding-top:50px;
+  padding-bottom:40px;
+}
+
+.our-team-list {
+/*  border: 1px solid black;   */ 
+  margin:0;
+  padding:0;
+  
+  display:flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  
+}
+
+.cards {
+/*  border: 1px solid black; */
+  width: 320px;
+}
+
+.cards img {
+/*  border: 1px solid black; */
+  width: 320px;
+  height: 253px;
+  padding-bottom:10px ;
+  
+}
+
+.cards p {
+  margin:0;
+  padding:0;
+  width: 320px;
+  height: 180px;
+  padding-bottom:10px ;
+  
+}
+
+.how-we-work {
+  
+  padding:0; 
+  margin:0;
+  padding-top: 35px;
+  background: #E2C4BA;
+  padding-left:99px;
+  padding-right:99px;  
+}
+
+.how-we-work h2 {
+/*   border: 1px solid red; */
+  padding:0; 
+  margin:0;
+    
+}
+
+
+.how-we-work-list {
+  padding:0;
+  margin:0;
+  padding-top:40px;
+  padding-bottom:81px;
+  border: 1px solid blue;
+  background: #E2C4BA;
+
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: space-between;
+    grid-gap: 20px;
+
+     
+}
+
+.how-we-work-list li {
+  
+  border: 1px solid blue;
+
+
+  
+}
+
+.how-we-work-step {
+  padding:0;
+  margin:0;
+  width: 70px;
+  padding-top:20px ;
+  padding-bottom:20px ;
+
+  border-radius:50px;
+  display: inline-block;  
+  background-color: #8D7370;
+  
+}
+
+.how-we-work-text {
+    
+}
+  
