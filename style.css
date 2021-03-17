@@ -103,6 +103,22 @@ body {
   color: #ffffff;
 }
 
+.reviews__title {
+font-size: 40px;
+font-style: normal;
+font-weight: 400;
+line-height: 50px;
+text-transform: uppercase;
+}
+
+.review__text {
+text-align: left;
+}
+
+.review__sign {
+text-transform: uppercase;  
+ 
+}
 /* шрифты конец */
 
 .container {
@@ -431,4 +447,64 @@ li {
 .how-we-work-text {
   padding-top: 20px;
   min-height: 120px;
+}
+
+.reviews {
+  margin: 0;
+  padding: 0;
+ }
+
+.reviews__title {
+  margin: 0;
+  padding: 0;  
+}
+
+.review__sliders {
+  border: 1px solid red;
+  margin: 0;
+  padding: 0 81px 0 81px;    
+}
+
+.review-1 {
+  border: 1px solid red;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 72px 407px 407px 72px;
+  justify-content: space-between;
+  align-items: center; 
+ 
+}
+
+.review__text {
+   border: 1px solid red; 
+}
+
+.review__photos {
+  border: 1px solid blue; 
+  display: grid;
+  grid-gap: 24px;
+}
+
+.review__photo__1,
+.review__photo__2
+{
+  border: 1px solid green;
+  width:407px;
+  height:272px; 
+}
+
+.slider__btn {
+  padding: 0;
+  margin: 0;
+  width: 70px;
+  height: 70px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 50px;
+  text-align: center;
+  background: var(--rosedust);
+  display: inline-block;
+  
+  
 }
