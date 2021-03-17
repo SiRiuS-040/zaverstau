@@ -10,7 +10,6 @@
    </style>
    <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
-
 <body>
    <header class="header">
       <div class="container">
@@ -85,7 +84,9 @@
                   <img src="#" width="488" height="451" alt="Квартира 1-4">
                </li>
             </ul>
-            <button class="our-works-btn"><i class="our-works-btn__fwrd"></i>Смотреть ещё</button>
+
+           
+           <button class="our-works-btn"><i class="our-works-btn__fwrd"></i>Смотреть ещё</button>
 
 
             <input class="our-works-btn" type="button" value="Смотреть ещё" name="Дальше" id=""><span
@@ -147,22 +148,23 @@
                </li>
             </ul>
          </section>
-         <section id="part5" class="otzivi">
-            <h2>Отзывы</h2>
-            <div class="sliders">
-               <div class="otziv-1">
-                  <input type="button" name="slider-back" id="">
-                  <p>«Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала вашу студию для украшения своего
-                     дома.
+         <section id="part5" class="reviews">
+            <h2 class="reviews__title">Отзывы</h2>
+            <div class="review__sliders">
+               <div class="review-1">
+                  <input type="button" name="slider__frwd" value="назад" id="" class="slider__btn slider__btn__back">
+                  <p class="review__text">«Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала вашу студию для украшения своего
+                     дома. <br> <br>
                      Работа шла быстро, было очень приятно общаться и взаимодествовайть
-                     с сотрудниками. Не ожидала, что это будет так легко!
-                     Буду советовать и своим друзьям к вам обращаться!»</p>
-                  <p>Анна Беловская</p>
-                  <div class="otziv-1-photos">
-                     <img src="#" alt="photo-1">
-                     <img src="#" alt="photo-2">
+                     с сотрудниками. Не ожидала, что это будет так легко! <br> <br>
+                     Буду советовать и своим друзьям к вам обращаться!» <br> <br>
+                 <span class="review__sign">Анна Беловская</span>
+                 </p>
+                     <div class="review__photos">
+                     <img src="https://evspb.ru/wp-content/uploads/2015/11/01_Glavnaya.jpg" alt="photo__1-1" class="review__photo__1">
+                     <img src="https://evspb.ru/wp-content/uploads/2015/11/01_Glavnaya.jpg" alt="photo__1-2" class="review__photo__2">
                   </div>
-                  <input type="button" name="slider-forward" id="">
+                  <input type="button" name="slider-forward" value="Вперед" id="" class="slider__btn slider__btn__frwd">
                   <p></p>
                </div>
             </div>
@@ -193,5 +195,4 @@
       </div>
    </footer>
 </body>
-
 </html>
