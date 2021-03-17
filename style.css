@@ -1,27 +1,32 @@
 /* шрифты */
+:root {
+  --blood-mahogany: #533738;
+  --rosedust: #cc8b86;
+  --purefrost: #f9eae1;
+  --goldenguernsey: #e2c4ba;
+}
 
 body {
   font-family: Montserrat;
   font-style: normal;
   font-weight: 400;
-  color: #533738;  
-  text-align: left;  
+  color: var(--blood-mahogany);
+  text-align: left;
+  font-size: 18px;
+  line-height: 30px;
 }
 
-.header-main h2 {
-  
+.page {
+  height: 100%;
+}
+
+.header__title {
   font-size: 50px;
   font-weight: 400;
   line-height: 62px;
   letter-spacing: 0em;
   text-align: left;
-  color: #533738;
-}
-
-.header-main .title-text {
-  font-size: 18px;
-  line-height: 30px;
-  letter-spacing: 0em;
+  color: var(--blood-mahogany);
 }
 
 .btn {
@@ -30,7 +35,7 @@ body {
   color: #533738;
 }
 
-.about-us h2 {
+.about-us__title {
   text-align: center;
   text-transform: uppercase;
   font-size: 40px;
@@ -40,61 +45,148 @@ body {
   letter-spacing: 0em;
 }
 
-.section-about-us p {
-  font-size: 18px;
-  line-height: 30px;
+.exp-digits {
+  font-size: 50px;
+  line-height: 62px;
+  color: #ffffff;
+}
+
+.exp-text {
+  font-size: 30px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+/* */
+
+.portfolio__title {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 50px;
   text-align: left;
+  text-transform: uppercase;
+}
+
+.our-works-btn {
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 37px;
+  letter-spacing: 0em;
+  color: #533738;
+}
+
+.our-team__title {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 0em;
+}
+
+.cards__text {
+  text-align: left;
+}
+
+.how-we-work-__title {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 50px;
+  text-transform: uppercase;
+  color: #533738;
+}
+
+.how-we-work-step {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #ffffff;
 }
 
 /* шрифты конец */
 
 .container {
-  margin: 0;
-  padding: 0;
-  width: 1400px;
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 1200px;
   text-align: center;
 }
 
-/* ХЕДЕР Начало */
-
-li {
-  list-style-type: none;
+a {
+  text-decoration: none;
 }
 
-header {
-  width: 1400px;
-
-  padding-top: 36px;
-  background: #f2eebf;
-  background-image: url(/img/header-main.jpg);
-}
-
-nav {
-  width: 1200px;
-
-  margin-left: auto;
-  margin-right: auto;
-
-  display: flex;
-  justify-content: space-between;
-}
-
-.navigation {
-  border: 1px solid black;
+p {
   margin: 0;
   padding: 0;
+}
 
+img {
+  height: auto;
+}
+
+li {
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/* ХЕДЕР Начало */
+
+.header {
+  background: #f2eebf;
+  background-image: url(/img/header-main.jpg);
+  background-position: 0 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 715px;
+}
+
+.header__navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 36px;
+}
+
+.navigation__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  list-style: none;
+  width: 840px;
+  padding: 0;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.navigation__link,
+.header__phone,
+.logo {
+  color: var(--blood-mahogany);
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.logo:hover,
+.navigation__link:hover,
+.header__phone:hover {
+  opacity: 0.8;
 }
 
 .logo {
-  margin-left: 0;
-  margin-right: auto;
-
   display: flex;
-  justify-content: center;
   align-items: center;
-
-  /*  background-image: url(/img/logo.svg); */
 }
 
 .logo::before {
@@ -102,117 +194,241 @@ nav {
   background-image: url(/img/logo.svg);
   background-repeat: no-repeat;
   background-position: center center;
-
   width: 25px;
   height: 25px;
-  display: inline-block;
-  vertical-align: center;
-}
-
-.menu {
-  border: 1px solid black;
-
-  padding: 0;
-  width: 840px;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-nav a,
-.menu a {
-  border: 1px solid black;
-  text-decoration: none;
-  color: #533738;
-}
-
-.phone {
-  margin-left: auto;
-  margin-right: 0px;
-  padding-top: 2px;
 }
 
 .header-main {
-  margin: 0;
+  margin: 91px 0 168px 184px;
   padding: 0;
-  margin-left: 184px;
-  margin-top: 91px;
   text-align: left;
   width: 534px;
 }
 
-h1 {
+.header__title {
   margin: 0;
-  padding: 0;
-  display: none;
 }
 
-.header-main h2 {
-  margin: 0;
-
-}
-
-.header-main .title-text {
+.title-text {
   padding: 0;
-  margin: 24px 0 0 0;
-
+  margin: 24px 0 21px 0;
 }
 
 .btn {
-  text-decoration: none;
   padding: 25px 66px 24px 68px;
   text-align: center;
-  background: #cc8b86;
-}
-
-.title-link {
-  margin: 0;
-  margin-top: 46px;
-  padding-bottom: 168px;
+  background: var(--rosedust);
+  display: inline-block;
 }
 
 /* ХЕДЕР - КОНЕЦ  */
 
 /* О НАС - НАЧАЛО */
 
+.main {
+  background: #f9eae1;
+}
 .about-us {
   background: #f9eae1;
   margin: 0;
   padding: 0;
   padding-top: 65px;
-
 }
 
-.about-us h2 {
+.about-us__title {
   margin: 0;
   padding: 0;
   padding-bottom: 40px;
-
 }
 
 .section-about-us {
-  padding: 0;
- 
-  /*  border: 1px solid black; */
-  
+  padding: 0 0 21px 00;
+
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: start;
 }
 
-.section-about-us img {
-  margin-left: 182px;
-
+.our-photo {
+  margin-left: 82px;
   width: 445px;
   height: 465px;
 }
 
-.section-about-us p {
+.section-about-us__our-text {
   margin: 0;
-  /*  border: 1px solid red; */
+  border: 1px solid red;
 
   text-align: left;
   height: 330px;
   width: 528px;
+}
+
+.experience {
+  /* КАК РАСТЯНУТЬ ЖЕ ЭТО на экран!!!!!   */
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
+  padding-left: 0;
+  padding-top: 85px;
+  padding-bottom: 81px;
+  border: 1px solid red;
+  background: #8d7370;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ПОРТФОЛИО начало */
+
+.portfolio {
+  margin: 0;
+  padding: 0;
+  padding-top: 65px;
+  background: var(--purefrost);
+}
+
+/* НАШИ РАБОТЫ */
+
+.portfolio__title {
+  margin: 0;
+  padding: 0;
+}
+
+.our-works {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 10px;
+}
+
+.ver-1 {
+  border: 1px solid red;
+  width: 488px;
+  height: 451px;
+  margin-top: 30px;
+}
+.ver-2 {
+  border: 1px solid red;
+  width: 692px;
+  height: 451px;
+  margin-top: 30px;
+}
+
+.our-works-btn {
+  margin: 0;
+  padding: 0;
+  width: 294px;
+  height: 37px;
+  margin-top: 40px;
+  margin-bottom: 65px;
+  border: 0px solid red;
+  text-align: center;
+  background: var(--purefrost);
+}
+
+.our-works-btn__fwrd::before {
+  content: "";
+  background-image: url(/img/logo.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 50px;
+  height: 50px;
+}
+
+/* НАША КОМАНДА */
+
+.our-team {
+  /*  border: 1px solid blue;   */
+  margin: 0;
+  padding: 0;
+  padding-left: 81px;
+  padding-right: 81px;
+  background: var(--goldenguernsey);
+}
+
+.our-team__title {
+  /*  border: 1px solid red;  */
+  margin: 0;
+  padding: 0;
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+
+.our-team__list {
+  /*  border: 1px solid black;   */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.cards {
+  /*  border: 1px solid black; */
+  width: 320px;
+}
+
+.cards__img {
+  /*  border: 1px solid black; */
+  width: 320px;
+  height: 253px;
+  padding-bottom: 10px;
+}
+
+.cards__text {
+  margin: 0;
+  padding: 0;
+  width: 320px;
+  height: 180px;
+  padding-bottom: 10px;
+}
+
+.how-we-work {
+  padding: 0;
+  margin: 0;
+  padding-top: 35px;
+  background: var(--goldenguernsey);
+}
+
+.how-we-work-__title {
+  /*   border: 1px solid red; */
+  padding: 0;
+  margin: 0;
+}
+
+.how-we-work-list {
+  padding: 0;
+  margin: 0;
+  padding-top: 40px;
+  padding-bottom: 81px;
+  background: #e2c4ba;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: space-between;
+  grid-gap: 20px;
+}
+
+.how-we-work-step {
+  padding: 0;
+  margin: 0;
+  width: 70px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  border-radius: 50px;
+  display: inline-block;
+  background-color: #8d7370;
+}
+
+.how-we-work-text {
+  padding-top: 20px;
+  min-height: 120px;
 }
