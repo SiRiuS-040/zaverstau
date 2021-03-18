@@ -4,6 +4,7 @@
   --rosedust: #cc8b86;
   --purefrost: #f9eae1;
   --goldenguernsey: #e2c4ba;
+  --bitterbriar: #8d7370;
 }
 
 body {
@@ -104,54 +105,51 @@ body {
 }
 
 .reviews__title {
-font-size: 40px;
-font-style: normal;
-font-weight: 400;
-line-height: 50px;
-text-transform: uppercase;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px;
+  text-transform: uppercase;
 }
 
 .review__text {
-text-align: left;
+  text-align: left;
 }
 
 .review__sign {
-text-transform: uppercase;  
- 
+  text-transform: uppercase;
 }
 
 .request__title {
-padding: 50px 0 0 0;
-margin: 0;
-font-size: 40px;
-font-weight: 400;
-line-height: 50px;
-text-align: left;
-text-transform: uppercase;
-color: #FFFFFF;
+  padding: 50px 0 0 0;
+  margin: 0;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 50px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 .request__description {
-font-size: 18px;
-line-height: 30px;
-text-align: left;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: left;
 }
 
 .request__form__btn__low {
-font-family: Montserrat;
-font-style: normal;
-font-weight: 500;
-font-size: 20px;
-font-weight: 500;
-line-height: 24x;
-text-align: left;
-color: #533738;
+  font-family: Montserrat;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 500;
+  color: #533738;
 }
-
 
 /* шрифты конец */
 
 .container {
+  border: 1px solid red;
+
   margin: 0 auto;
   padding: 0 10px;
   width: 1200px;
@@ -265,7 +263,6 @@ li {
   text-align: center;
   background: var(--rosedust);
   display: inline-block;
-  
 }
 
 /* ХЕДЕР - КОНЕЦ  */
@@ -273,61 +270,60 @@ li {
 /* О НАС - НАЧАЛО */
 
 .main {
-  background: #f9eae1;
+  background: var(--purefrost);
 }
 .about-us {
-  background: #f9eae1;
   margin: 0;
-  padding: 0;
-  padding-top: 65px;
+  padding: 65px 0 0 0;
 }
 
 .about-us__title {
   margin: 0;
-  padding: 0;
-  padding-bottom: 40px;
+  padding: 0 0 40px 0;
 }
 
 .section-about-us {
-  padding: 0 0 21px 00;
-
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: start;
+  padding: 0 72px 21px 72px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .our-photo {
-  margin-left: 82px;
   width: 445px;
   height: 465px;
 }
 
 .section-about-us__our-text {
-  margin: 0;
+  margin: 0 0 0 65px;
   border: 1px solid red;
-
   text-align: left;
-  height: 330px;
-  width: 528px;
+}
+
+.about-us__our-text {
+  margin-bottom: 1.37em;
+}
+
+/* ОПЫТ РАБОТЫ*/
+
+.section__experience {
+  background: var(--bitterbriar);
 }
 
 .experience {
-  /* КАК РАСТЯНУТЬ ЖЕ ЭТО на экран!!!!!   */
-  width: 100%;
   padding: 0;
   margin: 0;
-
-  padding-left: 0;
   padding-top: 85px;
   padding-bottom: 81px;
-  border: 1px solid red;
-  background: #8d7370;
+  border: 0px solid red;
+  background: var(--bitterbriar);
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-between;
   align-items: center;
 }
+
+/* О НАС КОНЕЦ */
 
 /* ПОРТФОЛИО начало */
 
@@ -344,7 +340,6 @@ li {
 }
 
 .our-works {
-
   margin: 0;
   padding: 0;
   display: flex;
@@ -352,13 +347,56 @@ li {
   flex-wrap: wrap;
   padding-top: 40px; /* 40 */
   padding-bottom: 0px;
-  }
+}
+
+.object-1__hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 100%;
+  line-height: 30px;
+  opacity: 0.8;
+  background-color: #644845;
+  color: #FFFFFF;
+  box-sizing: border-box;
+}
+
+.our-works-photo:hover .object-1__hover {
+  display: flex;
+}
+
+.object-1__title {
+  padding: 0;
+  margin: 0;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 37px;
+  text-align: center;
+  padding: 1.5em;
+}
+
+.object-1__text {
+  font-size: 18px;
+  line-height: 30px;
+  text-align: left;
+  
+  padding: 1.5em;
+}
 
 .our-works-photo {
-  border:1 px solid black;
+  border: 1 px solid black;
   margin: 0;
-  padding: 0;  
-  
+  padding: 0;
+  line-height: 0;
+  margin-bottom: 30px;
+  position: relative;
 }
 .our-works-photo__sq {
   margin: 0;
@@ -375,14 +413,13 @@ li {
   height: 451px;
 }
 
-
 .our-works-btn__box {
-  border:0px solid;
+  border: 0px solid;
   margin: 0;
   padding: 0;
-  outline:none;    /* none убрать */ 
-  margin-top: 40px ;
-  margin-bottom: 65px ;
+  outline: none; /* none убрать */
+  margin-top: 10px;
+  margin-bottom: 65px;
 }
 
 .our-works-btn__box:hover {
@@ -397,39 +434,37 @@ li {
   background: var(--purefrost);
   display: flex;
   justify-content: space-between;
-    outline:none;
+  outline: none;
 }
 
 .our-works-btn__text {
-font-size: 30px;
-font-weight: 500;
-line-height: 37px;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 37px;
 }
 
 .our-works-btn__frwd {
-  width: 60px; 
+  width: 60px;
   height: 37px;
   display: inline-block;
   background-image: url(https://pics.freeicons.io/uploads/icons/png/5937647761558965372-512.png);
-  background-position:center; 
+  background-position: center;
   background-size: 35px;
   background-repeat: no-repeat;
-  outline:none;
+  outline: none;
 }
+
+/* ПОРТФОЛИО КОНЕЦ */
 
 /* НАША КОМАНДА */
 
 .our-team {
-  /*  border: 1px solid blue;   */
   margin: 0;
   padding: 0;
-  padding-left: 81px;
-  padding-right: 81px;
   background: var(--goldenguernsey);
 }
 
 .our-team__title {
-  /*  border: 1px solid red;  */
   margin: 0;
   padding: 0;
   padding-top: 50px;
@@ -437,21 +472,18 @@ line-height: 37px;
 }
 
 .our-team__list {
-  /*  border: 1px solid black;   */
   margin: 0;
-  padding: 0;
+  padding: 0 72px 0 72px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
 
 .cards {
-  /*  border: 1px solid black; */
   width: 320px;
 }
 
 .cards__img {
-  /*  border: 1px solid black; */
   width: 320px;
   height: 253px;
   padding-bottom: 10px;
@@ -460,10 +492,12 @@ line-height: 37px;
 .cards__text {
   margin: 0;
   padding: 0;
-  width: 320px;
-  height: 180px;
   padding-bottom: 10px;
 }
+
+/* НАША КОМАНДА конец */
+
+/* КАК МЫ РАБОТАЕМ начало */
 
 .how-we-work {
   padding: 0;
@@ -473,7 +507,6 @@ line-height: 37px;
 }
 
 .how-we-work-__title {
-  /*   border: 1px solid red; */
   padding: 0;
   margin: 0;
 }
@@ -483,7 +516,7 @@ line-height: 37px;
   margin: 0;
   padding-top: 40px;
   padding-bottom: 81px;
-  background: #e2c4ba;
+  background: var(--goldenguernsey);
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -500,7 +533,7 @@ line-height: 37px;
 
   border-radius: 50px;
   display: inline-block;
-  background-color: #8d7370;
+  background-color: var(--bitterbriar);
 }
 
 .how-we-work-text {
@@ -508,59 +541,55 @@ line-height: 37px;
   min-height: 120px;
 }
 
+/* КАК МЫ РАБОТАЕМ конец */
+
+/* ОТЗЫВЫ начало  */
+
 .reviews {
   margin: 0;
   padding: 0;
- }
+}
 
 .reviews__title {
   margin: 0;
-  padding: 0;
-  padding-top: 65px;  
+  padding: 65px 0 0 0;
 }
 
-
 .review__sliders {
-  border: 1px solid red;
   margin: 0;
-  padding: 0;
-  padding: 40px 81px 65px 81px ;
+  padding: 40px 71px 65px 71px;
   display: grid;
   grid-template-columns: 72px 1fr 72px;
   justify-content: space-between;
-  align-items: center; 
+  align-items: center;
 }
 
- .review-1 {
-border: 1px solid red;
+.review__1 {
   margin: 0;
   padding: 0 29px 0 29px;
   display: grid;
   grid-template-columns: 407px 407px;
   justify-content: space-between;
-  align-items: center; 
+  align-items: center;
 }
 
-.review__text {
-/*   border: 1px solid red; */
+.review__text__style {
+  margin-bottom: 1.5em;
 }
 
 .review__photos {
-/*  border: 1px solid blue; */
   display: grid;
   grid-gap: 24px;
 }
 
 .review__photo__1,
-.review__photo__2
-{
+.review__photo__2 {
   border: 1px solid green;
-  width:407px;
-  height:272px; 
+  width: 407px;
+  height: 272px;
 }
 
 .slider__btn {
-  border: 0px solid black; 
   padding: 0;
   margin: 0;
   width: 70px;
@@ -571,54 +600,52 @@ border: 1px solid red;
   text-align: center;
   background: var(--rosedust);
   display: inline-block;
-    background-image: url(https://pics.freeicons.io/uploads/icons/png/5937647761558965372-512.png);
+  background-image: url(https://pics.freeicons.io/uploads/icons/png/5937647761558965372-512.png);
   background-position: center;
   background-size: 32px;
   background-repeat: no-repeat;
-  outline:none;
+  outline: none;
 }
 
 .slider__btn__back {
- -webkit-transform:rotate(180deg);
+  -webkit-transform: rotate(180deg);
 }
 
 .slider__btn:hover {
   opacity: 0.8;
 }
 
+/* ОТЗЫВЫ конец  */
+
 /* ОСТАВИТЬ ЗАЯВКУ */
 
+.section__6 {
+  background: #8d7370;
+}
 
 .section__request {
-  border: 1px solid black; 
   padding: 0;
   margin: 0;
 
-  
   display: grid;
   grid-template-columns: 1fr 590px;
   justify-content: space-between;
   grid-gap: 0px;
-  background:#8D7370;
-
-
+  background: var(--bitterbriar);
 }
 
 .request__box {
-  border: 1px solid black; 
   padding: 0;
   margin: 0;
-  padding-left: 81px ;
-  padding-right: 20px ;
+  padding-left: 71px;
+  padding-right: 20px;
 }
-
-
 
 .request__description {
   padding: 24px 0 0 0;
   margin: 0;
   text-align: left;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .request__form {
@@ -628,12 +655,11 @@ border: 1px solid red;
 }
 
 .request__form__line {
-  
+  color: red;
 }
 
 .request__form__name,
 .request__form__tel {
-  
   font-family: Montserrat;
   font-size: 18px;
   font-style: normal;
@@ -641,27 +667,37 @@ border: 1px solid red;
   line-height: 30px;
   text-align: left;
   text-decoration: none;
- border-bottom: 1px solid #FFFFFF;
+  border-bottom: 1px solid #ffffff;
 }
 
 .request__form__name {
   margin-top: 0px;
-  width: 506px;
-/*  background:#8D7370; */
-  color: #FFFFFF;
+  width: 100%;
+  background: var(--bitterbriar);
 }
 
 .request__form__tel {
   margin-top: 35px;
-  width: 506px;
-/*  background:#8D7370;*/
-  
-  color: #FFFFFF;
- }
+  width: 100%;
+  background: var(--bitterbriar);
+}
+
+input[type="text"]::-webkit-input-placeholder {
+  color: #f6ede9;
+}
+input[type="text"]::-moz-placeholder {
+  color: #f6ede9;
+}
+
+input[type="tel"]::-webkit-input-placeholder {
+  color: #f6ede9;
+}
+input[type="tel"]::-moz-placeholder {
+  color: #f6ede9;
+}
 
 .request__form__btn__low {
-
-  border: 1px solid black;
+  border: 0px solid black;
   width: 309px;
   height: 74px;
   margin-top: 31px;
@@ -671,10 +707,9 @@ border: 1px solid red;
 }
 
 .section__request__map {
-    border: 1px solid black;
+  border: 0px solid black;
   padding: 0;
-  margin: 0 ;
+  margin: 0;
   width: 590px;
   height: 624px;
-
 }
