@@ -84,12 +84,13 @@
                   <img src="https://dizainexpert.ru/wp-content/uploads/2020/02/foto-komnaty-gejmera_29-283x283.jpg"  alt="Квартира 1-4" class="our-works-photo__sq object-1">
                </li>
             </ul>
-           <button class="our-works-btn"><i class="our-works-btn__fwrd"></i>Смотреть ещё</button>
-
-
-            <input class="our-works-btn" type="button" value="Смотреть ещё" name="Дальше" id=""><span
-               class="our-works-btn__fwrd"></span>
-
+           
+        <button class="our-works-btn__box">
+        <ul class="our-works-btn">
+          <li class="our-works-btn__text">Смотреть ещё</li>
+          <li class="our-works-btn__frwd"></li>
+        </ul>
+          </button>
 
          </section>
          <section id="part3" class="our-team">
@@ -167,19 +168,24 @@
               <input type="button" name="slider-forward" value=" " id="" class="slider__btn slider__btn__frwd">
             </div>
          </section>
-         <section id="part6" class="application">
-            <div class="application-form">
-               <h2>Оставить заявку</h2>
-               <p>Оставьте свои контакты. Менеджер перезвонит <br> в удобное вам время и ответит на все вопросы.</p>
-               <form action="#">
-                  <input type="text" placeholder="Ваше имя" name="name">
-                  <input type="tel" placeholder="Введите телефон" name="phone_number">
-                  <input type="submit" value="Оставить заявку" name="" id="">
+         <section id="part6" class="section__request">
+            <div class="request__box">
+               <h2 class="request__title">Оставить заявку</h2>
+               <p class="request__description">Оставьте свои контакты. Менеджер перезвонит <br> в удобное вам время и ответит на все вопросы.</p>
+               <form action="#" class="request__form">
+                  <p class="request__form__line"><input class="request__form__name" type="text" placeholder="Ваше имя" name="name" ></p>
+                  <p class="request__form__line"><input class="request__form__tel" type="tel" placeholder="Введите телефон" name="phone_number"></p>
+                  <input type="submit" value="Оставить заявку" name="" id=""class="request__form__btn__low">
                </form>
             </div>
-            <iframe
+            <img src="https://static-maps.yandex.ru/1.x/?l=map&ll=30.323073%2C59.938667&pt=30.323073%2C59.938667%2Cpm2orgm&spn=0.0035866132394418%2C0.0017996463694914&size=650%2C450" alt="gmaps СПБ, Конющенная 19" class="section__request__map">
+           
+<!--
+          <iframe
                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1615372453633!5m2!1sru!2sru"
-               width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+               width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+          </iframe>
+-->
          </section>
       </div>
    </main>
