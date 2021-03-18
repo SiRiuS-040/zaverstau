@@ -10,6 +10,7 @@
    </style>
    <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
+
 <body>
    <header class="header">
       <div class="container">
@@ -48,140 +49,195 @@
       </div>
    </header>
    <main class="main">
-      <div class="container">
-         <section id="part1" class="about-us">
+      <section id="part1" class="about-us">
+         <div class="container">
             <h2 class="about-us__title">О нас</h2>
             <div class="section-about-us">
-               <img src="https://i.pinimg.com/originals/27/75/ef/2775ef55530a8ed7de99e8de38a4463c.jpg" alt="сервиз на столе" class="our-photo">
-               <p class="section-about-us__our-text">Премиальный европейский текстиль — одно из самых<br> главных
-                  направлений работы коллектива.
-                  Создавать <br> неповторимые интерьеры для наших дорогих<br> клиентов, уделяя внимание мельчайшим
-                  деталям — <br> вот то, что по-настоящему вдохновляет дизайнеров<br> нашей студии. <br>
-                  <br>
-                  Наш коллектив сделает все, чтобы после<br> сотрудничества с нами, Вам было приятно сказать:<br> «
-                  Да! Это именно то, что действительно достойно моего<br> дома!»
-               </p>
+               <img src="https://i.pinimg.com/originals/27/75/ef/2775ef55530a8ed7de99e8de38a4463c.jpg"
+                  alt="сервиз на столе" class="our-photo">
+               <div class="section-about-us__our-text">
+                  <p class="about-us__our-text">
+                     Премиальный европейский текстиль — одно из самых
+                     главных направлений работы коллектива. Создавать
+                     неповторимые интерьеры для наших дорогих
+                     клиентов, уделяя внимание мельчайшим деталям —
+                     вот то, что по-настоящему вдохновляет дизайнеров
+                     нашей студии.
+                  </p>
+                  <p class="about-us__our-text">
+                     Наш коллектив сделает все, чтобы после
+                     сотрудничества с нами, Вам было приятно сказать:
+                     «Да! Это именно то, что действительно достойно моего
+                     дома!»
+                  </p>
+               </div>
             </div>
-         </section>
-         <ul class="experience">
-            <li class="exp-text"><span class="exp-digits">5</span> <br> лет опыта</li>
-            <li class="exp-text"><span class="exp-digits">100</span> <br> проектов</li>
-            <li class="exp-text"><span class="exp-digits">10</span> <br> наград</li>
-         </ul>
-         <section id="part2" class="portfolio">
+         </div>
+      </section>
+      <section class="section__experience">
+         <div class="container">
+            <ul class="experience">
+               <li class="exp-text"><span class="exp-digits">5</span> <br> лет опыта</li>
+               <li class="exp-text"><span class="exp-digits">100</span> <br> проектов</li>
+               <li class="exp-text"><span class="exp-digits">10</span> <br> наград</li>
+            </ul>
+         </div>
+      </section>
+
+      <section id="part2" class="portfolio">
+         <div class="container">
             <h2 class="portfolio__title">Наши работы</h2>
             <ul class="our-works">
                <li class="our-works-photo">
-                  <img src="https://dizainexpert.ru/wp-content/uploads/2020/02/foto-komnaty-gejmera_29-283x283.jpg"  alt="Квартира 1-1" class="our-works-photo__sq object-1">
+                  <img src="https://dizainexpert.ru/wp-content/uploads/2020/02/foto-komnaty-gejmera_29-283x283.jpg"
+                     alt="Квартира 1-1" class="our-works-photo__sq object-1__hover__link">
+                  <div class="object-1__hover">
+                     <p class="object-1__title">Квартира-студия <br> 30 кв.м.</p>
+                     <p class="object-1__text">В квартире были светлые стены и тёплые цвета.
+                        Мы сконцентрировались на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к
+                        виллам островов Бали.
+                     </p>
+                  </div>
                </li>
                <li class="our-works-photo">
-                  <img src="https://dizainexpert.ru/wp-content/uploads/2020/02/foto-komnaty-gejmera_29-283x283.jpg"  alt="Квартира 1-2" class="our-works-photo__wide object-1">
+                  <img src="https://dizainexpert.ru/wp-content/uploads/2020/02/foto-komnaty-gejmera_29-283x283.jpg"
+                     alt="Квартира 1-2" class="our-works-photo__wide object-1">
                </li>
                <li class="our-works-photo">
-                  <img src="https://dizainexpert.ru/wp-content/uploads/2020/02/foto-komnaty-gejmera_29-283x283.jpg"  alt="Квартира 1-3" class="our-works-photo__wide object-1">
+                  <img src="https://dizainexpert.ru/wp-content/uploads/2020/02/foto-komnaty-gejmera_29-283x283.jpg"
+                     alt="Квартира 1-3" class="our-works-photo__wide object-1">
                </li>
                <li class="our-works-photo">
-                  <img src="https://dizainexpert.ru/wp-content/uploads/2020/02/foto-komnaty-gejmera_29-283x283.jpg"  alt="Квартира 1-4" class="our-works-photo__sq object-1">
+                  <img src="https://dizainexpert.ru/wp-content/uploads/2020/02/foto-komnaty-gejmera_29-283x283.jpg"
+                     alt="Квартира 1-4" class="our-works-photo__sq object-1">
                </li>
             </ul>
-           <button class="our-works-btn"><i class="our-works-btn__fwrd"></i>Смотреть ещё</button>
-
-
-            <input class="our-works-btn" type="button" value="Смотреть ещё" name="Дальше" id=""><span
-               class="our-works-btn__fwrd"></span>
-
-
-         </section>
-         <section id="part3" class="our-team">
+            <button class="our-works-btn__box">
+               <ul class="our-works-btn">
+                  <li class="our-works-btn__text">Смотреть ещё</li>
+                  <li class="our-works-btn__frwd"></li>
+               </ul>
+            </button>
+         </div>
+      </section>
+      <section id="part3" class="our-team">
+         <div class="container">
             <h2 class="our-team__title">Команда</h2>
             <ul class="our-team__list">
                <li class="cards">
                   <img class="cards__img"
                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStHMupR6Dc9J6vli7CjYKGnvjtrpm5Cyhcjw&usqp=CAU"
                      alt="Маша дизайнер">
-                  <p class="cards__text">Это Маша, наш главный <br> дизайнер. Она отвечает за<br> дизайн-проект,
-                     приезжает к вам<br> домой,
-                     общается<br> и помогает сделать вашу<br> квартиру красивой и уютной.</p>
+                  <p class="cards__text">Это Маша, наш главный дизайнер. Она отвечает за дизайн-проект,
+                     приезжает к вам домой,
+                     общается и помогает сделать вашу квартиру красивой и уютной.
+                  </p>
                </li>
                <li class="cards">
                   <img class="cards__img"
                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMXd17Mm-jpn1KPV_fSBsO4FXMfR2QupweWg&usqp=CAU"
                      alt="Саша менеджер">
-                  <p class="cards__text">С нашим менеджером Сашей вы<br> познакомитесь в первую<br>очередь. Она
-                     проконсультирует<br> вас,
-                     соберёт все документы<br> и ответит на все вопросы.</p>
+                  <p class="cards__text">С нашим менеджером Сашей Вы познакомитесь в первую очередь. Она
+                     проконсультирует Вас, соберёт все документы и ответит на все вопросы.
+                  </p>
                </li>
                <li class="cards">
                   <img class="cards__img"
                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6V0ZTPKJeRzCrWX5k4bYEs_EQBzbBaXawsQ&usqp=CAU"
                      alt="Катя дизайнер">
-                  <p class="cards__text">Катя тоже занимается дизайном. <br> Она всегда находит общий язык <br>с
-                     клиентами и точно знает,
-                     <br> как обсутроить дом так, чтобы <br> вам понравилось.
+                  <p class="cards__text">Катя тоже занимается дизайном. Она всегда находит общий язык с
+                     клиентами и точно знает, как обсутроить дом так, чтобы вам понравилось.
                   </p>
                </li>
             </ul>
-         </section>
-         <section id="part4" class="how-we-work">
+         </div>
+      </section>
+      <section id="part4" class="how-we-work">
+         <div class="container">
             <h2 class="how-we-work-__title">Как мы работаем</h2>
             <ul class="how-we-work-list">
                <li>
                   <p class="how-we-work-step">1</p>
-                  <p class="how-we-work-text">Знакомимся, выезжаем<br> на объект, утверждаем<br> концепцию,
-                     подписывем<br> договор.</p>
+                  <p class="how-we-work-text">Знакомимся, выезжаем на объект, утверждаем концепцию,
+                     подписывем договор.</p>
                </li>
                <li>
                   <p class="how-we-work-step">2</p>
-                  <p class="how-we-work-text">Подбираем мебель, текстиль, <br> аксессуры. Делаем 3D- <br>зуализацию.</p>
+                  <p class="how-we-work-text">Подбираем мебель, текстиль, аксессуры. Делаем 3D- зуализацию.</p>
                </li>
                <li>
                   <p class="how-we-work-step">3</p>
-                  <p class="how-we-work-text">Находим нужные магазины, <br> помогаем с доставкой <br> и оплатой товаров.
+                  <p class="how-we-work-text">Находим нужные магазины, помогаем с доставкой и оплатой товаров.
                   </p>
                </li>
                <li>
                   <p class="how-we-work-step">4</p>
-                  <p class="how-we-work-text">Воплощаем проект в жизнь: <br>расставляем мебель и цветы, <br> вешаем
-                     шторы, находим <br> места для мелочей.</p>
+                  <p class="how-we-work-text">Воплощаем проект в жизнь: расставляем мебель и цветы, вешаем
+                     шторы, находим места для мелочей.</p>
                </li>
             </ul>
-         </section>
-         <section id="part5" class="reviews">
+         </div>
+      </section>
+      <section id="part5" class="reviews">
+         <div class="container">
             <h2 class="reviews__title">Отзывы</h2>
             <div class="review__sliders">
-              <input type="button" name="slider__frwd" value=" " id="" class="slider__btn slider__btn__back">
-               <div class="review-1">
-                  <p class="review__text">«Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала вашу студию для украшения своего
-                     дома. <br> <br>
-                     Работа шла быстро, было очень приятно общаться и взаимодествовайть
-                     с сотрудниками. Не ожидала, что это будет так легко! <br> <br>
-                     Буду советовать и своим друзьям к вам обращаться!» <br> <br>
-                 <span class="review__sign">Анна Беловская</span>
-                 </p>
-                     <div class="review__photos">
-                     <img src="https://evspb.ru/wp-content/uploads/2015/11/01_Glavnaya.jpg" alt="photo__1-1" class="review__photo__1">
-                     <img src="https://evspb.ru/wp-content/uploads/2015/11/01_Glavnaya.jpg" alt="photo__1-2" class="review__photo__2">
+               <input type="button" name="slider__frwd" value=" " id="" class="slider__btn slider__btn__back">
+               <div class="review__1">
+                  <div class="review__text">
+                     <div>
+                        <p class="review__text__style">
+                           «Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала вашу студию
+                           для украшения своего дома.
+                        </p>
+                        <p class="review__text__style">
+                           Работа шла быстро, было очень приятно
+                           общаться и взаимодествовайть с сотрудниками. Не ожидала, что это будет так легко!
+                        </p>
+                        <p class="review__text__style">
+                           Буду советовать и своим друзьям к вам обращаться!»
+                        </p>
+                     </div>
+                     <p class="review__sign">Анна Беловская</p>
                   </div>
-                  
+                  <div class="review__photos">
+                     <img src="https://evspb.ru/wp-content/uploads/2015/11/01_Glavnaya.jpg" alt="photo__1-1"
+                        class="review__photo__1">
+                     <img src="https://evspb.ru/wp-content/uploads/2015/11/01_Glavnaya.jpg" alt="photo__1-2"
+                        class="review__photo__2">
+                  </div>
+
                </div>
-              <input type="button" name="slider-forward" value=" " id="" class="slider__btn slider__btn__frwd">
+               <input type="button" name="slider-forward" value=" " id="" class="slider__btn slider__btn__frwd">
             </div>
-         </section>
-         <section id="part6" class="application">
-            <div class="application-form">
-               <h2>Оставить заявку</h2>
-               <p>Оставьте свои контакты. Менеджер перезвонит <br> в удобное вам время и ответит на все вопросы.</p>
-               <form action="#">
-                  <input type="text" placeholder="Ваше имя" name="name">
-                  <input type="tel" placeholder="Введите телефон" name="phone_number">
-                  <input type="submit" value="Оставить заявку" name="" id="">
-               </form>
+         </div>
+      </section>
+      <section id="part6" class="section__6">
+         <div class="container">
+            <div class="section__request">
+               <div class="request__box">
+                  <h2 class="request__title">Оставить заявку</h2>
+                  <p class="request__description">
+                     Оставьте свои контакты. Менеджер перезвонит в удобное вам время и
+                     ответит на все вопросы.
+                  </p>
+                  <form action="#" class="request__form">
+                     <p class="request__form__line"><input class="request__form__name" type="text"
+                           placeholder="Ваше имя" name="name"></p>
+                     <p class="request__form__line"><input class="request__form__tel" type="tel"
+                           placeholder="Введите телефон" name="phone_number"></p>
+                     <input type="submit" value="Оставить заявку" name="" id="" class="request__form__btn__low">
+                  </form>
+               </div>
+               <img
+                  src="https://static-maps.yandex.ru/1.x/?l=map&ll=30.323073%2C59.938667&pt=30.323073%2C59.938667%2Cpm2orgm&spn=0.0035866132394418%2C0.0017996463694914&size=650%2C450"
+                  alt="gmaps СПБ, Конющенная 19" class="section__request__map">
+
             </div>
-            <iframe
-               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1615372453633!5m2!1sru!2sru"
-               width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-         </section>
-      </div>
+
+         </div>
+      </section>
+
    </main>
    <footer>
       <div class="container">
@@ -193,4 +249,5 @@
       </div>
    </footer>
 </body>
+
 </html>
