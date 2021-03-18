@@ -103,6 +103,22 @@ body {
   color: #ffffff;
 }
 
+.reviews__title {
+font-size: 40px;
+font-style: normal;
+font-weight: 400;
+line-height: 50px;
+text-transform: uppercase;
+}
+
+.review__text {
+text-align: left;
+}
+
+.review__sign {
+text-transform: uppercase;  
+ 
+}
 /* шрифты конец */
 
 .container {
@@ -291,34 +307,40 @@ li {
   background: var(--purefrost);
 }
 
-/* НАШИ РАБОТЫ */
-
 .portfolio__title {
   margin: 0;
   padding: 0;
 }
 
 .our-works {
+  border: 1px solid red; 
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   flex-wrap: wrap;
-  padding-top: 10px;
-}
+  padding-top: 40px; /* 40 */
+  padding-bottom: 0px;
+  }
 
-.ver-1 {
+.our-works-photo {
+  border:1 px solid black;
+  margin: 0;
+  padding: 0;  
+  
+}
+.our-works-photo__sq {
+  margin: 0;
+  padding: 0;
   border: 1px solid red;
   width: 488px;
   height: 451px;
-  margin-top: 30px;
 }
-.ver-2 {
+.our-works-photo__wide {
+
   border: 1px solid red;
   width: 692px;
   height: 451px;
-  margin-top: 30px;
 }
 
 .our-works-btn {
@@ -431,4 +453,82 @@ li {
 .how-we-work-text {
   padding-top: 20px;
   min-height: 120px;
+}
+
+.reviews {
+  margin: 0;
+  padding: 0;
+ }
+
+.reviews__title {
+  margin: 0;
+  padding: 0;
+  padding-top: 65px;  
+}
+
+
+.review__sliders {
+  border: 1px solid red;
+  margin: 0;
+  padding: 0;
+  padding: 40px 81px 65px 81px ;
+  display: grid;
+  grid-template-columns: 72px 1fr 72px;
+  justify-content: space-between;
+  align-items: center; 
+}
+
+ .review-1 {
+border: 1px solid red;
+  margin: 0;
+  padding: 0 29px 0 29px;
+  display: grid;
+  grid-template-columns: 407px 407px;
+  justify-content: space-between;
+  align-items: center; 
+}
+
+.review__text {
+/*   border: 1px solid red; */
+}
+
+.review__photos {
+/*  border: 1px solid blue; */
+  display: grid;
+  grid-gap: 24px;
+}
+
+.review__photo__1,
+.review__photo__2
+{
+  border: 1px solid green;
+  width:407px;
+  height:272px; 
+}
+
+.slider__btn {
+  border: 0px solid black; 
+  padding: 0;
+  margin: 0;
+  width: 70px;
+  height: 70px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 50px;
+  text-align: center;
+  background: var(--rosedust);
+  display: inline-block;
+    background-image: url(https://pics.freeicons.io/uploads/icons/png/5937647761558965372-512.png);
+  background-position: center;
+  background-size: 32px;
+  background-repeat: no-repeat;
+  outline:none;
+}
+
+.slider__btn__back {
+ -webkit-transform:rotate(180deg);
+}
+
+.slider__btn:hover {
+  opacity: 0.8;
 }
