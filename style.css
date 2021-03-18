@@ -313,7 +313,7 @@ li {
 }
 
 .our-works {
-  border: 1px solid red; 
+
   margin: 0;
   padding: 0;
   display: flex;
@@ -337,10 +337,25 @@ li {
   height: 451px;
 }
 .our-works-photo__wide {
-
+  margin: 0;
+  padding: 0;
   border: 1px solid red;
   width: 692px;
   height: 451px;
+}
+
+
+.our-works-btn__box {
+  border:0px solid;
+  margin: 0;
+  padding: 0;
+  outline:none;    /* none убрать */ 
+  margin-top: 40px ;
+  margin-bottom: 65px ;
+}
+
+.our-works-btn__box:hover {
+  opacity: 0.8;
 }
 
 .our-works-btn {
@@ -348,20 +363,25 @@ li {
   padding: 0;
   width: 294px;
   height: 37px;
-  margin-top: 40px;
-  margin-bottom: 65px;
-  border: 0px solid red;
-  text-align: center;
   background: var(--purefrost);
+  display: flex;
+  justify-content: space-between;
+    outline:none;
 }
 
-.our-works-btn__fwrd::before {
-  content: "";
-  background-image: url(/img/logo.svg);
+.our-works-btn__text{
+
+}
+
+.our-works-btn__frwd {
+  width: 60px; 
+  height: 37px;
+  display: inline-block;
+  background-image: url(https://pics.freeicons.io/uploads/icons/png/5937647761558965372-512.png);
+  background-position:center; 
+  background-size: 35px;
   background-repeat: no-repeat;
-  background-position: center center;
-  width: 50px;
-  height: 50px;
+  outline:none;
 }
 
 /* НАША КОМАНДА */
