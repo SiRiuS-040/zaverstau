@@ -1,4 +1,4 @@
-/* шрифты */
+/* Общее */
 :root {
   --blood-mahogany: #533738;
   --rosedust: #cc8b86;
@@ -21,135 +21,7 @@ body {
   height: 100%;
 }
 
-.header__title {
-  font-size: 50px;
-  font-weight: 400;
-  line-height: 62px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: var(--blood-mahogany);
-}
-
-.btn {
-  font-size: 20px;
-  line-height: 24px;
-  color: #533738;
-}
-
-.about-us__title {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 50px;
-  letter-spacing: 0em;
-}
-
-.exp-digits {
-  font-size: 50px;
-  line-height: 62px;
-  color: #ffffff;
-}
-
-.exp-text {
-  font-size: 30px;
-  line-height: 37px;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-
-/* */
-
-.portfolio__title {
-  font-size: 40px;
-  font-weight: 400;
-  line-height: 50px;
-  text-align: left;
-  text-transform: uppercase;
-}
-
-.our-works-btn {
-  font-family: Montserrat;
-  font-size: 30px;
-  font-weight: 500;
-  line-height: 37px;
-  letter-spacing: 0em;
-  color: #533738;
-}
-
-.our-team__title {
-  font-size: 40px;
-  font-weight: 400;
-  line-height: 50px;
-  letter-spacing: 0em;
-}
-
-.cards__text {
-  text-align: left;
-}
-
-.how-we-work-__title {
-  font-size: 40px;
-  font-weight: 400;
-  line-height: 50px;
-  text-transform: uppercase;
-  color: #533738;
-}
-
-.how-we-work-step {
-  font-size: 30px;
-  font-weight: 500;
-  line-height: 30px;
-  color: #ffffff;
-}
-
-.reviews__title {
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 50px;
-  text-transform: uppercase;
-}
-
-.review__text {
-  text-align: left;
-}
-
-.review__sign {
-  text-transform: uppercase;
-}
-
-.request__title {
-  padding: 50px 0 0 0;
-  margin: 0;
-  font-size: 40px;
-  font-weight: 400;
-  line-height: 50px;
-  text-align: left;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-
-.request__description {
-  font-size: 18px;
-  line-height: 30px;
-  text-align: left;
-}
-
-.request__form__btn__low {
-  font-family: Montserrat;
-  font-style: normal;
-  font-size: 20px;
-  font-weight: 500;
-  color: #533738;
-}
-
-/* шрифты конец */
-
 .container {
-  border: 1px solid red;
-
   margin: 0 auto;
   padding: 0 10px;
   width: 1200px;
@@ -167,6 +39,7 @@ p {
 
 img {
   height: auto;
+  cursor: pointer;
 }
 
 li {
@@ -251,6 +124,12 @@ li {
 
 .header__title {
   margin: 0;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 62px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--blood-mahogany);
 }
 
 .title-text {
@@ -259,6 +138,9 @@ li {
 }
 
 .btn {
+  font-size: 20px;
+  line-height: 24px;
+  color: #533738;
   padding: 25px 66px 24px 68px;
   text-align: center;
   background: var(--rosedust);
@@ -278,6 +160,13 @@ li {
 }
 
 .about-us__title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 0em;
   margin: 0;
   padding: 0 0 40px 0;
 }
@@ -295,7 +184,6 @@ li {
 
 .section-about-us__our-text {
   margin: 0 0 0 65px;
-  border: 1px solid red;
   text-align: left;
 }
 
@@ -314,13 +202,24 @@ li {
   margin: 0;
   padding-top: 85px;
   padding-bottom: 81px;
-  border: 0px solid red;
   background: var(--bitterbriar);
-
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-between;
   align-items: center;
+}
+
+.exp-digits {
+  font-size: 50px;
+  line-height: 62px;
+  color: #ffffff;
+}
+
+.exp-text {
+  font-size: 30px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 /* О НАС КОНЕЦ */
@@ -337,6 +236,11 @@ li {
 .portfolio__title {
   margin: 0;
   padding: 0;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 50px;
+  text-align: left;
+  text-transform: uppercase;
 }
 
 .our-works {
@@ -363,9 +267,9 @@ li {
   padding: 0;
   height: 100%;
   line-height: 30px;
-  opacity: 0.8; 
+  opacity: 0.8;
   background-color: #644845;
-  color: #FFFFFF;
+  color: #ffffff;
   box-sizing: border-box;
 }
 
@@ -379,8 +283,6 @@ li {
   font-size: 30px;
   font-weight: 500;
   line-height: 37px;
-  text-align: ;
-
 }
 
 .object-1__text {
@@ -391,12 +293,9 @@ li {
   line-height: 30px;
   text-align: left;
   align-items: center;
-  line-height: ;
-
 }
 
 .our-works-photo {
-  border: 1 px solid black;
   margin: 0;
   padding: 0;
   line-height: 0;
@@ -406,24 +305,20 @@ li {
 .our-works-photo__sq {
   margin: 0;
   padding: 0;
-  border: 1px solid red;
   width: 488px;
   height: 451px;
 }
 .our-works-photo__wide {
   margin: 0;
   padding: 0;
-  border: 1px solid red;
   width: 692px;
   height: 451px;
 }
 
 .our-works-btn__box {
-  border: 0px solid;
-  margin: 0;
+  border: 0px;
   padding: 0;
   outline: none; /* none убрать */
-  margin-top: 10px;
   margin-bottom: 65px;
 }
 
@@ -434,12 +329,18 @@ li {
 .our-works-btn {
   margin: 0;
   padding: 0;
-  width: 294px;
   height: 37px;
   background: var(--purefrost);
   display: flex;
   justify-content: space-between;
   outline: none;
+
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 37px;
+  letter-spacing: 0em;
+  color: #533738;
 }
 
 .our-works-btn__text {
@@ -459,20 +360,22 @@ li {
   outline: none;
 }
 
-.our-works-btn__text__2 {
+.our-works-btn__2 {
   font-size: 30px;
   font-weight: 500;
   line-height: 37px;
+  display: flex;
+  align-items: center;
 }
 
-.our-works-btn__text__2::after {
-  border:1px solid;
+.our-works-btn__2::after {
+  padding-left: 10px;
   content: "";
-  background-image: url(https://svgsilh.com/svg/35260.svg);
+  background-image: url(/img/Arrow-right.svg);
   background-repeat: no-repeat;
   background-position: center center;
-  width: 250px;
-  height: 250px;
+  width: 60px;
+  height: 37px;
 }
 
 /* ПОРТФОЛИО КОНЕЦ */
@@ -490,6 +393,11 @@ li {
   padding: 0;
   padding-top: 50px;
   padding-bottom: 40px;
+
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 0em;
 }
 
 .our-team__list {
@@ -511,9 +419,8 @@ li {
 }
 
 .cards__text {
-  margin: 0;
-  padding: 0;
   padding-bottom: 10px;
+  text-align: left;
 }
 
 /* НАША КОМАНДА конец */
@@ -527,9 +434,15 @@ li {
   background: var(--goldenguernsey);
 }
 
-.how-we-work-__title {
+.how-we-work__title {
   padding: 0;
   margin: 0;
+
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 50px;
+  text-transform: uppercase;
+  color: #533738;
 }
 
 .how-we-work-list {
@@ -555,6 +468,11 @@ li {
   border-radius: 50px;
   display: inline-block;
   background-color: var(--bitterbriar);
+
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #ffffff;
 }
 
 .how-we-work-text {
@@ -574,6 +492,12 @@ li {
 .reviews__title {
   margin: 0;
   padding: 65px 0 0 0;
+
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50px;
+  text-transform: uppercase;
 }
 
 .review__sliders {
@@ -594,8 +518,16 @@ li {
   align-items: center;
 }
 
+.review__text {
+  text-align: left;
+}
+
 .review__text__style {
   margin-bottom: 1.5em;
+}
+
+.review__sign {
+  text-transform: uppercase;
 }
 
 .review__photos {
@@ -605,7 +537,6 @@ li {
 
 .review__photo__1,
 .review__photo__2 {
-  border: 1px solid green;
   width: 407px;
   height: 272px;
 }
@@ -621,7 +552,7 @@ li {
   text-align: center;
   background: var(--rosedust);
   display: inline-block;
-  background-image: url(https://pics.freeicons.io/uploads/icons/png/5937647761558965372-512.png);
+  background-image: url(/img/Arrow\ 2-right.svg); /* https://pics.freeicons.io/uploads/icons/png/5937647761558965372-512.png */
   background-position: center;
   background-size: 32px;
   background-repeat: no-repeat;
@@ -662,6 +593,17 @@ li {
   padding-right: 20px;
 }
 
+.request__title {
+  padding: 50px 0 0 0;
+  margin: 0;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 50px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
 .request__description {
   padding: 24px 0 0 0;
   margin: 0;
@@ -694,27 +636,31 @@ li {
 
 .request__form__name {
   margin-top: 0px;
-  width: 100%;
+  padding-bottom: 3px;
+  width: 98%;
   background: var(--bitterbriar);
 }
 
 .request__form__tel {
   margin-top: 35px;
-  width: 100%;
+  padding-bottom: 3px;
+  width: 508px;
   background: var(--bitterbriar);
 }
 
-input {outline:none;}
+input {
+  outline: none;
+}
 
-input, textarea {
-outline: none;
-border: none;
-border-bottom: solid 1px #f2f2f2;
+input,
+textarea {
+  outline: none;
+  border: none;
+  border-bottom: solid 1px #f2f2f2;
 }
 
 input[type="text"]::-webkit-input-placeholder {
   color: #f6ede9;
-  background: var(--bitterbriar);
 }
 input[type="text"]::-moz-placeholder {
   color: #f6ede9;
@@ -727,7 +673,7 @@ input[type="tel"]::-moz-placeholder {
   color: #f6ede9;
 }
 
-.request__form__btn__low { 
+.request__form__btn__low {
   border: 0px solid black;
   width: 309px;
   height: 74px;
@@ -735,6 +681,12 @@ input[type="tel"]::-moz-placeholder {
   text-align: center;
   background: var(--rosedust);
   display: inline-block;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 500;
+  color: #533738;
 }
 
 .section__request__map {
@@ -763,16 +715,16 @@ input[type="tel"]::-moz-placeholder {
 }
 
 .footer__phone {
-  color: var(--bitterbriar);
+  color: var(--blood-mahogany);
 }
 
 .footer__address {
   padding: 0 0 0 42px;
   margin-right: auto;
-  color: var(--bitterbriar);
+  color: var(--blood-mahogany);
 }
 
 .footer__company {
-  padding-left: auto ;
-  color: var(--bitterbriar);
+  padding-left: auto;
+  color: var(--blood-mahogany);
 }
