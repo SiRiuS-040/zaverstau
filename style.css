@@ -148,8 +148,6 @@ body {
 /* шрифты конец */
 
 .container {
-  border: 1px solid red;
-
   margin: 0 auto;
   padding: 0 10px;
   width: 1200px;
@@ -167,6 +165,7 @@ p {
 
 img {
   height: auto;
+  cursor: pointer;
 }
 
 li {
@@ -295,7 +294,6 @@ li {
 
 .section-about-us__our-text {
   margin: 0 0 0 65px;
-  border: 1px solid red;
   text-align: left;
 }
 
@@ -314,9 +312,7 @@ li {
   margin: 0;
   padding-top: 85px;
   padding-bottom: 81px;
-  border: 0px solid red;
   background: var(--bitterbriar);
-
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-between;
@@ -363,9 +359,9 @@ li {
   padding: 0;
   height: 100%;
   line-height: 30px;
-  opacity: 0.8; 
+  opacity: 0.8;
   background-color: #644845;
-  color: #FFFFFF;
+  color: #ffffff;
   box-sizing: border-box;
 }
 
@@ -379,8 +375,6 @@ li {
   font-size: 30px;
   font-weight: 500;
   line-height: 37px;
-  text-align: ;
-
 }
 
 .object-1__text {
@@ -391,12 +385,9 @@ li {
   line-height: 30px;
   text-align: left;
   align-items: center;
-  line-height: ;
-
 }
 
 .our-works-photo {
-  border: 1 px solid black;
   margin: 0;
   padding: 0;
   line-height: 0;
@@ -406,24 +397,20 @@ li {
 .our-works-photo__sq {
   margin: 0;
   padding: 0;
-  border: 1px solid red;
   width: 488px;
   height: 451px;
 }
 .our-works-photo__wide {
   margin: 0;
   padding: 0;
-  border: 1px solid red;
   width: 692px;
   height: 451px;
 }
 
 .our-works-btn__box {
-  border: 0px solid;
-  margin: 0;
+  border: 0px;
   padding: 0;
   outline: none; /* none убрать */
-  margin-top: 10px;
   margin-bottom: 65px;
 }
 
@@ -434,7 +421,6 @@ li {
 .our-works-btn {
   margin: 0;
   padding: 0;
-  width: 294px;
   height: 37px;
   background: var(--purefrost);
   display: flex;
@@ -459,20 +445,22 @@ li {
   outline: none;
 }
 
-.our-works-btn__text__2 {
+.our-works-btn__2 {
   font-size: 30px;
   font-weight: 500;
   line-height: 37px;
+  display: flex;
+  align-items: center;
 }
 
-.our-works-btn__text__2::after {
-  border:1px solid;
+.our-works-btn__2::after {
+  padding-left: 10px;
   content: "";
-  background-image: url(https://svgsilh.com/svg/35260.svg);
+  background-image: url(/img/Arrow-right.svg);
   background-repeat: no-repeat;
   background-position: center center;
-  width: 250px;
-  height: 250px;
+  width: 60px;
+  height: 37px;
 }
 
 /* ПОРТФОЛИО КОНЕЦ */
@@ -511,8 +499,6 @@ li {
 }
 
 .cards__text {
-  margin: 0;
-  padding: 0;
   padding-bottom: 10px;
 }
 
@@ -605,7 +591,6 @@ li {
 
 .review__photo__1,
 .review__photo__2 {
-  border: 1px solid green;
   width: 407px;
   height: 272px;
 }
@@ -621,7 +606,7 @@ li {
   text-align: center;
   background: var(--rosedust);
   display: inline-block;
-  background-image: url(https://pics.freeicons.io/uploads/icons/png/5937647761558965372-512.png);
+  background-image: url(/img/Arrow\ 2-right.svg); /* https://pics.freeicons.io/uploads/icons/png/5937647761558965372-512.png */
   background-position: center;
   background-size: 32px;
   background-repeat: no-repeat;
@@ -704,12 +689,15 @@ li {
   background: var(--bitterbriar);
 }
 
-input {outline:none;}
+input {
+  outline: none;
+}
 
-input, textarea {
-outline: none;
-border: none;
-border-bottom: solid 1px #f2f2f2;
+input,
+textarea {
+  outline: none;
+  border: none;
+  border-bottom: solid 1px #f2f2f2;
 }
 
 input[type="text"]::-webkit-input-placeholder {
@@ -727,7 +715,7 @@ input[type="tel"]::-moz-placeholder {
   color: #f6ede9;
 }
 
-.request__form__btn__low { 
+.request__form__btn__low {
   border: 0px solid black;
   width: 309px;
   height: 74px;
@@ -773,6 +761,6 @@ input[type="tel"]::-moz-placeholder {
 }
 
 .footer__company {
-  padding-left: auto ;
+  padding-left: auto;
   color: var(--bitterbriar);
 }
