@@ -62,12 +62,16 @@ li {
 
 .header {
   background: #f2eebf;
-  background-image: url(/img/header-main.jpg);
+  background-image: url(img/header-main.jpg);
   background-position: 0 0;
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 715px;
+  min-width: 1210px;
+  /* ДЛЯ МОБИЛОК?!?! */
 }
+
+/*                    */
 
 .header__navigation {
   display: flex;
@@ -108,7 +112,7 @@ li {
 
 .logo::before {
   content: "";
-  background-image: url(/img/logo.svg);
+  background-image: url(img/logo.svg);
   background-repeat: no-repeat;
   background-position: center center;
   width: 25px;
@@ -153,6 +157,7 @@ li {
 
 .main {
   background: var(--purefrost);
+  min-width: 1210px; /* ДЛЯ МОБИЛОК?!?! */
 }
 .about-us {
   margin: 0;
@@ -371,7 +376,7 @@ li {
 .our-works-btn__2::after {
   padding-left: 10px;
   content: "";
-  background-image: url(/img/Arrow-right.svg);
+  background-image: url(img/Arrow-right.svg);
   background-repeat: no-repeat;
   background-position: center center;
   width: 60px;
@@ -397,7 +402,6 @@ li {
   font-size: 40px;
   font-weight: 400;
   line-height: 50px;
-  letter-spacing: 0em;
 }
 
 .our-team__list {
@@ -421,6 +425,7 @@ li {
 .cards__text {
   padding-bottom: 10px;
   text-align: left;
+  max-height: 180px;
 }
 
 /* НАША КОМАНДА конец */
@@ -478,6 +483,7 @@ li {
 .how-we-work-text {
   padding-top: 20px;
   min-height: 120px;
+  max-height: 180px;
 }
 
 /* КАК МЫ РАБОТАЕМ конец */
@@ -552,7 +558,7 @@ li {
   text-align: center;
   background: var(--rosedust);
   display: inline-block;
-  background-image: url(/img/Arrow\ 2-right.svg); /* https://pics.freeicons.io/uploads/icons/png/5937647761558965372-512.png */
+  background-image: url(img/Arrow\ 2-right.svg); /* https://pics.freeicons.io/uploads/icons/png/5937647761558965372-512.png */
   background-position: center;
   background-size: 32px;
   background-repeat: no-repeat;
@@ -703,6 +709,7 @@ input[type="tel"]::-moz-placeholder {
 
 .footer {
   background: var(--purefrost);
+  min-width: 1210px; /* ДЛЯ МОБИЛОК?!?! */
 }
 
 .contacts {
